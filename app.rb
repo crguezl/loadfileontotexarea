@@ -1,10 +1,13 @@
 require 'sinatra'
 
-set :public_folder, File.dirname(__FILE__)
+#set :public_folder, File.dirname(__FILE__)
 
 get '/' do
   erb :index
 end
 
-__END__
+get '/withget' do
+  erb :withget
+end
+
 

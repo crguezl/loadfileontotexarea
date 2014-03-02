@@ -2,3 +2,4 @@
 
 `rake` starts the server. Visit the root page with your browser.
 
+See also branch `separated`.
