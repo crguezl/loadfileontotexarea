@@ -21,7 +21,7 @@ task :deploy  do
 end
 
 desc "ps"
-task :deploy  do
+task :ps  do
   sh "heroku ps"
 end
 
@@ -31,7 +31,7 @@ task :logs  do
 end
 
 desc "destroy deployment in heroku"
-task :logs, :appname  do
+task :applogs, :appname  do
   name = args[:appname] || 'XXX';
   sh "heroku apps:destroy #{name}"
 end
